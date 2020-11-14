@@ -90,3 +90,119 @@ nlu:
     - are you a human?
     - am I talking to a bot?
     - am I talking to a human?
+
+
+- intent: book_room
+  examples: |
+    - i want to book a room
+    - i would like to book a room
+    - need a room
+    - can you book a room?
+    - book room
+    - book the rooms
+    - i want to book a room for stay
+
+- intent: book_room_info
+  examples: |
+    - i want to book room for [2]{"entity":"number"} people
+    - i want room for [3]{"entity":"number"} people
+    - room for [4]{"entity":"number"} people please
+    - book room for [2]{"entity":"number"} people
+    - book room for [1]{"entity":"number"} person
+
+- intent: how_many_rooms
+  examples: |
+    - [2]{"entity":"number"} rooms
+    - [3]{"entity":"number"} room
+    - [1]{"entity":"number"} room
+    - [2]{"entity":"number"}
+    - [1]{"entity":"number"}
+
+- intent: type_room
+  examples: |
+    - Simple
+    - Delux
+
+- intent: clean_room
+  examples: |
+    - I want to have my room cleaned
+    - clean my room
+    - can you please clean my room
+    - please clean my room
+    - clean room
+
+- intent: when_clean_room
+  examples: |
+    - Could you send someone right now?
+    - please now
+    - can you do it now?
+    - Now would be much more better
+
+- intent: clean_room_time
+  examples: |
+    - can you send someone in [1]{"entity":"number"} hour?
+    - Could you send someone after [2]{"entity":"number"} hours?
+    - send someone in [3]{"entity":"number"} hours?
+    - someone in [4]{"entity":"number"} hours?
+    - please in [2]{"entity":"number"} hours?
+
+- intent: faq_check_in
+  examples: |
+    - What are your check-in timings?
+    - Check in timings?
+    - Can you please tell me check-in timings?
+    - Check in time please.
+
+- intent: faq_checkout
+  examples: |
+    - What are your check-out timings?
+    - Check out timings?
+    - Can you please tell me check-out timings?
+    - Check out time please.
+
+- intent: faq_cancelreservation
+  examples: |
+    - How do I cancel a reservation?
+    - what is the cancel reservation procedure?
+    - can you tell me how to cancel reservation?
+    - tell me how to cancel reservation?
+
+- intent: faq_cancelpolicy
+  examples: |
+    - What is your cancellation policy?
+    - what policy do you have for cancelling?
+    - can you telling me your cancelling policy?
+    - policy for cancellation?
+
+- intent: faq_restaurant
+  examples: |
+    - Does the hotel have a restaurant?
+    - do you have a restaurant?
+    - is restaurant availabe there?
+    - is this hotel have a restaurant?
+
+- intent: faq_breakfast
+  examples: |
+    - Does the hotel offer breakfast?
+    - do you offer breakfast?
+    - hotel offer breakfast?
+    - can I have breakfast in hotel?
+
+- intent: faq_breakfast_timing
+  examples: |
+    - What are the breakfast timings?
+    - what is the time for breakfast?
+    - what time do you give breakfast?
+    - breakfast time?
+    - time for breakfast?
+
+
+- intent: faq_restaurant_timing
+  examples: |
+    - What are the timings of your restaurant?
+    - What are the restaurant timings?
+    - what is the time for restaurant?
+    - what time do you give restaurant?
+    - restaurant time?
+    - time for restaurant? 
+

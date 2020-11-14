@@ -28,3 +28,76 @@ stories:
   - action: utter_did_that_help
   - intent: deny
   - action: utter_goodbye
+
+- story: book rooms
+  steps:
+  - intent: book_room
+  - action: utter_book_room
+  - intent: how_many_rooms
+  - action: utter_how_many_rooms
+  - intent: type_room
+  - action: utter_type_room
+
+- story: book room by detail
+  steps:
+  - intent: book_room_info
+  - action: utter_how_many_rooms
+  - intent: type_room
+  - action: utter_type_room
+
+
+- story: faq check in
+  steps:
+  - intent: faq_check_in
+  - action: utter_faq_check_in
+
+- story: faq checkout
+  steps:
+  - intent: faq_checkout
+  - action: utter_faq_checkout
+
+- story: faq cancelreservation
+  steps:
+  - intent: faq_cancelreservation
+  - action: utter_faq_cancelreservation
+  - action: utter_faq_cancelreservation2
+
+- story: faq cancelpolicy
+  steps:
+  - intent: faq_cancelpolicy
+  - action: utter_faq_cancelpolicy
+
+- story: faq restaurant
+  steps:
+  - intent: faq_restaurant
+  - action: utter_faq_restaurant
+
+- story: faq breakfast
+  steps:
+  - intent: faq_breakfast
+  - action: utter_faq_breakfast
+
+- story: faq breakfast timing
+  steps:
+  - intent: faq_breakfast_timing
+  - action: utter_faq_breakfast_timing
+
+- story: faq restaurant timing
+  steps:
+  - intent: faq_restaurant_timing
+  - action: utter_faq_restaurant_timing
+
+- story: clean room1
+  steps:
+  - intent: clean_room
+  - action: utter_clean_room
+  - intent: when_clean_room
+  - action: utter_when_clean_room
+
+- story: clean room2
+  steps:
+  - intent: clean_room
+  - action: utter_clean_room
+  - intent: clean_room_time
+  - action: action_clean_room_time
+
